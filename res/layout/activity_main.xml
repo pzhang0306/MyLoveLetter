@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/login"
+	android:orientation="vertical" >
+    
+	<EditText
+	    android:id="@+id/password"
+	    android:inputType="textPassword"
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="10dp"
+	    android:layout_centerInParent="true"
+	    android:hint="@string/password"
+	    android:textColor="#000000"
+	    android:textSize="25sp"
+	    android:maxLines="1"
+	    android:singleLine="true"
+	    android:background="@drawable/backwithborder" >
+	</EditText>
+	<EditText
+	    android:id="@+id/username"
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:layout_centerHorizontal="true"
+	    android:hint="@string/username"
+	    android:layout_above="@id/password"
+	    android:textColor="#000000"
+	    android:textSize="25sp"
+	    android:maxLines="1"
+	    android:singleLine="true"
+	    android:background="@drawable/backwithborder" >
+	</EditText>
+	<CheckBox
+	    android:id="@+id/keep_login"
+	    android:layout_below="@id/password"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+	    android:text="@string/keep_login" >
+	</CheckBox> 
+	<Button
+	    android:id="@+id/button_login"
+	    android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_login"
+        android:layout_toRightOf="@id/keep_login"
+        android:layout_below="@id/password"
+        android:onClick="dialogPage" >
+	</Button>
+	<TextView
+	    android:id="@+id/login_message"
+	    android:textColor="#000000"
+	    android:textSize="12sp"
+	    android:maxLines="1"
+	    android:singleLine="true"
+	    android:layout_width="300dp"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/button_login" >
+	</TextView>
+	
+    
+</RelativeLayout>

@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:21
+-keep class com.example.myloveletter.DialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.example.myloveletter.GCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.example.myloveletter.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.example.myloveletter.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.google.android.gcm.GCMBroadcastReceiver { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:46
+-keepclassmembers class * { *** dialogPage(...); }
+
+# onClick res/layout/activity_dialog.xml #generated:34
+-keepclassmembers class * { *** sendMessage(...); }
+
